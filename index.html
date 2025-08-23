@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MAHONDO HOSTELS</title>
+    <style>
+        /* Reset some default styles */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+
+        body {
+            background: linear-gradient(135deg, #6a11cb 0%, #2575fc 100%);
+            color: #fff;
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: flex-start;
+            padding: 20px;
+        }
+
+        header {
+            margin-bottom: 40px;
+            text-align: center;
+        }
+
+        header h1 {
+            font-size: 3rem;
+            letter-spacing: 3px;
+            text-shadow: 2px 2px 8px rgba(0,0,0,0.3);
+        }
+
+        main {
+            background: rgba(255, 255, 255, 0.1);
+            border-radius: 15px;
+            padding: 30px;
+            max-width: 600px;
+            width: 100%;
+            box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+            backdrop-filter: blur(8px);
+            -webkit-backdrop-filter: blur(8px);
+        }
+
+        main h2 {
+            margin-bottom: 20px;
+            font-weight: 700;
+            font-size: 2rem;
+            text-align: center;
+        }
+
+        .enquiry {
+            margin-bottom: 30px;
+            font-size: 1.1rem;
+            line-height: 1.6;
+            text-align: center;
+        }
+
+        .contact-buttons {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+        }
+
+        .contact-button {
+            background-color: #2575fc;
+            color: white;
+            border: none;
+            padding: 15px 25px;
+            border-radius: 50px;
+            font-size: 1.1rem;
+            cursor: pointer;
+            text-decoration: none;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            box-shadow: 0 4px 15px rgba(37, 117, 252, 0.4);
+            transition: background-color 0.3s ease, transform 0.3s ease;
+        }
+
+        .contact-button:hover {
+            background-color: #1a52d1;
+            transform: scale(1.05);
+        }
+
+        footer {
+            margin-top: 40px;
+            font-size: 0.9rem;
+            color: #d1d1d1;
+            text-align: center;
+        }
+
+        /* Animations */
+        @keyframes fadeInUp {
+            from {
+                opacity: 0;
+                transform: translateY(20px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        header h1, main h2, .enquiry, .contact-buttons {
+            animation: fadeInUp 1s ease forwards;
+        }
+
+        @media (max-width: 480px) {
+            main {
+                padding: 20px;
+                max-width: 100%;
+            }
+
+            .contact-buttons {
+                flex-direction: column;
+                gap: 15px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>MAHONDO HOSTELS</h1>
+    </header>
+    <main>
+        <h2>Welcome TVET Students!</h2>
+        <p class="enquiry">Looking for a room to stay? Enquire now and contact us directly!</p>
+        <div class="contact-buttons">
+            <a href="tel:+254720215511" class="contact-button" aria-label="Call Mahondo Hostels">
+                📞 Call 0720215511
+            </a>
+            <a href="https://wa.me/254720215511" target="_blank" rel="noopener noreferrer" class="contact-button" aria-label="WhatsApp Mahondo Hostels">
+                💬 WhatsApp 0720215511
+            </a>
+        </div>
+    </main>
+    <footer>
+        &copy; 2025 Mahondo Hostels. All rights reserved.
+    </footer>
+</body>
+</html>
